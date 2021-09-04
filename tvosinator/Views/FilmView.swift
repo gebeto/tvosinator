@@ -40,11 +40,6 @@ struct FilmView: View {
         .padding(10)
         .frame(height: 300)
         .cornerRadius(12)
-        .contextMenu(ContextMenu(menuItems: {
-            Text("Menu Item 1")
-            Text("Menu Item 2")
-            Text("Menu Item 3")
-        }))
         .onTapGesture {
             isPageOpen = true;
         }
