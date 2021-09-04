@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		AD4EE69426E3B28A005AD217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE69326E3B28A005AD217 /* ContentView.swift */; };
 		AD4EE69626E3B28A005AD217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4EE69526E3B28A005AD217 /* Assets.xcassets */; };
 		AD4EE69926E3B28A005AD217 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4EE69826E3B28A005AD217 /* Preview Assets.xcassets */; };
+		AD4EE6A126E3B300005AD217 /* ParseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6A026E3B300005AD217 /* ParseView.swift */; };
+		AD4EE6A426E3C448005AD217 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EE6A326E3C448005AD217 /* URLImageStore */; };
+		AD4EE6A626E3C448005AD217 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EE6A526E3C448005AD217 /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,7 @@
 		AD4EE69526E3B28A005AD217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4EE69826E3B28A005AD217 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD4EE69A26E3B28A005AD217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4EE6A026E3B300005AD217 /* ParseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4EE6A626E3C448005AD217 /* URLImage in Frameworks */,
+				AD4EE6A426E3C448005AD217 /* URLImageStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,7 @@
 				AD4EE69526E3B28A005AD217 /* Assets.xcassets */,
 				AD4EE69A26E3B28A005AD217 /* Info.plist */,
 				AD4EE69726E3B28A005AD217 /* Preview Content */,
+				AD4EE6A026E3B300005AD217 /* ParseView.swift */,
 			);
 			path = tvosinator;
 			sourceTree = "<group>";
@@ -85,6 +92,10 @@
 			dependencies = (
 			);
 			name = tvosinator;
+			packageProductDependencies = (
+				AD4EE6A326E3C448005AD217 /* URLImageStore */,
+				AD4EE6A526E3C448005AD217 /* URLImage */,
+			);
 			productName = tvosinator;
 			productReference = AD4EE68E26E3B28A005AD217 /* tvosinator.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +123,9 @@
 				Base,
 			);
 			mainGroup = AD4EE68526E3B28A005AD217;
+			packageReferences = (
+				AD4EE6A226E3C448005AD217 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = AD4EE68F26E3B28A005AD217 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4EE69426E3B28A005AD217 /* ContentView.swift in Sources */,
+				AD4EE6A126E3B300005AD217 /* ParseView.swift in Sources */,
 				AD4EE69226E3B28A005AD217 /* tvosinatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +343,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD4EE6A226E3C448005AD217 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD4EE6A326E3C448005AD217 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4EE6A226E3C448005AD217 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+		AD4EE6A526E3C448005AD217 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4EE6A226E3C448005AD217 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD4EE68626E3B28A005AD217 /* Project object */;
 }
