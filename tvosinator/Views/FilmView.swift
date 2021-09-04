@@ -49,7 +49,7 @@ struct FilmView: View {
             isPageOpen = true;
         }
         .sheet(isPresented: $isPageOpen, content: {
-            SimpleWebView(url: film.link)
+            FilmWebView(url: film.link)
                 .ignoresSafeArea()
         })
     }

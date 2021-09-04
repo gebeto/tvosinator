@@ -19,6 +19,7 @@
 		AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */; };
 		AD4EE6B026E3F700005AD217 /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AF26E3F700005AD217 /* FilmView.swift */; };
 		AD4EE6B226E40267005AD217 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6B126E40267005AD217 /* HomeView.swift */; };
+		ADFAE29526E4039F00E64112 /* FilmWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE29426E4039F00E64112 /* FilmWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsSection.swift; sourceTree = "<group>"; };
 		AD4EE6AF26E3F700005AD217 /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
 		AD4EE6B126E40267005AD217 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ADFAE29426E4039F00E64112 /* FilmWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				AD4EE6A826E3F652005AD217 /* SectionView.swift */,
 				AD4EE6AF26E3F700005AD217 /* FilmView.swift */,
 				AD4EE6B126E40267005AD217 /* HomeView.swift */,
+				ADFAE29426E4039F00E64112 /* FilmWebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				AD4EE6B026E3F700005AD217 /* FilmView.swift in Sources */,
 				AD4EE6AC26E3F6B2005AD217 /* Film.swift in Sources */,
+				ADFAE29526E4039F00E64112 /* FilmWebView.swift in Sources */,
 				AD4EE6A926E3F652005AD217 /* SectionView.swift in Sources */,
 				AD4EE69426E3B28A005AD217 /* ContentView.swift in Sources */,
 				AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */,
