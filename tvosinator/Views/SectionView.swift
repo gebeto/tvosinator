@@ -15,7 +15,7 @@ struct SectionView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text(filmsSection.title!)
+            Text(filmsSection.title)
                 .font(.title.weight(.bold))
                 .padding(.leading, 20)
             ScrollView(.horizontal, showsIndicators: false) {
