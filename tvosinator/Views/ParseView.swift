@@ -28,6 +28,8 @@ class ParseNavigationDelegate: NSObject, WKNavigationDelegate, ObservableObject 
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         webView.evaluateJavaScript(script) { result, err in
+            print(" >>> EER", err)
+            print(" >>> RES", result)
             if let dict = result as? [String: Any] {
                 self.dictToObject(dict: dict)
             }
@@ -51,11 +53,16 @@ extension ParseView {
         return wv;
     }
     
+    func createURLRequest(url: URL) -> URLRequest {
+        let request = URLRequest(url: url);
+        return request;
+    }
+    
     func updateUIView(_ uiView: WKWebView, context: Context) {
         guard let myURL = URL(string: url) else {
             return
         }
-        let request = URLRequest(url: myURL);
+        let request = createURLRequest(url: myURL);
         uiView.load(request);
     }
 }
