@@ -18,7 +18,6 @@ class ParseNavigationDelegate: NSObject, WKNavigationDelegate, ObservableObject 
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("GOOOO");
         let script = """
 const sections = [...document.querySelectorAll('section.section')];
 sections.map(section => ({

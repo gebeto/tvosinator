@@ -18,6 +18,7 @@
 		AD4EE6AC26E3F6B2005AD217 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AB26E3F6B2005AD217 /* Film.swift */; };
 		AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */; };
 		AD4EE6B026E3F700005AD217 /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AF26E3F700005AD217 /* FilmView.swift */; };
+		AD4EE6B226E40267005AD217 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6B126E40267005AD217 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AD4EE6AB26E3F6B2005AD217 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsSection.swift; sourceTree = "<group>"; };
 		AD4EE6AF26E3F700005AD217 /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
+		AD4EE6B126E40267005AD217 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				AD4EE6A026E3B300005AD217 /* ParseView.swift */,
 				AD4EE6A826E3F652005AD217 /* SectionView.swift */,
 				AD4EE6AF26E3F700005AD217 /* FilmView.swift */,
+				AD4EE6B126E40267005AD217 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				AD4EE6A926E3F652005AD217 /* SectionView.swift in Sources */,
 				AD4EE69426E3B28A005AD217 /* ContentView.swift in Sources */,
 				AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */,
+				AD4EE6B226E40267005AD217 /* HomeView.swift in Sources */,
 				AD4EE6A126E3B300005AD217 /* ParseView.swift in Sources */,
 				AD4EE69226E3B28A005AD217 /* tvosinatorApp.swift in Sources */,
 			);

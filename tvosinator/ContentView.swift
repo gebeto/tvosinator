@@ -10,29 +10,18 @@ import URLImage
 
 
 struct ContentView: View {
-    @State var filmsSections: [FilmsSection] = [];
-    
     var body: some View {
-        NavigationView {
-            ScrollView {
-                ParseView(url: "http://eneyida.tv", setFilmsSections: { filmsSections in
-                    self.filmsSections = filmsSections;
-                }).frame(height: 0)
-                VStack(spacing: 0) {
-                    ForEach(Array(filmsSections.enumerated()), id: \.offset) { index, filmsSection in
-                        VStack {
-                            SectionView(filmsSection: filmsSection, highlighted: index % 2 != 0)
-                        }
-                    }
-                }.padding(.top, 48)
-            }
-            .navigationTitle("Films")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            Text("Search")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
+                }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
