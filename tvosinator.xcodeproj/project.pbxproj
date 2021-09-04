@@ -14,6 +14,10 @@
 		AD4EE6A126E3B300005AD217 /* ParseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6A026E3B300005AD217 /* ParseView.swift */; };
 		AD4EE6A426E3C448005AD217 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EE6A326E3C448005AD217 /* URLImageStore */; };
 		AD4EE6A626E3C448005AD217 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EE6A526E3C448005AD217 /* URLImage */; };
+		AD4EE6A926E3F652005AD217 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6A826E3F652005AD217 /* SectionView.swift */; };
+		AD4EE6AC26E3F6B2005AD217 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AB26E3F6B2005AD217 /* Film.swift */; };
+		AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */; };
+		AD4EE6B026E3F700005AD217 /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AF26E3F700005AD217 /* FilmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AD4EE69826E3B28A005AD217 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD4EE69A26E3B28A005AD217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4EE6A026E3B300005AD217 /* ParseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseView.swift; sourceTree = "<group>"; };
+		AD4EE6A826E3F652005AD217 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		AD4EE6AB26E3F6B2005AD217 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsSection.swift; sourceTree = "<group>"; };
+		AD4EE6AF26E3F700005AD217 /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +66,13 @@
 		AD4EE69026E3B28A005AD217 /* tvosinator */ = {
 			isa = PBXGroup;
 			children = (
+				AD4EE69726E3B28A005AD217 /* Preview Content */,
+				AD4EE6AA26E3F68B005AD217 /* Models */,
+				AD4EE6A726E3F642005AD217 /* Views */,
 				AD4EE69126E3B28A005AD217 /* tvosinatorApp.swift */,
 				AD4EE69326E3B28A005AD217 /* ContentView.swift */,
 				AD4EE69526E3B28A005AD217 /* Assets.xcassets */,
 				AD4EE69A26E3B28A005AD217 /* Info.plist */,
-				AD4EE69726E3B28A005AD217 /* Preview Content */,
-				AD4EE6A026E3B300005AD217 /* ParseView.swift */,
 			);
 			path = tvosinator;
 			sourceTree = "<group>";
@@ -74,6 +83,25 @@
 				AD4EE69826E3B28A005AD217 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD4EE6A726E3F642005AD217 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD4EE6A026E3B300005AD217 /* ParseView.swift */,
+				AD4EE6A826E3F652005AD217 /* SectionView.swift */,
+				AD4EE6AF26E3F700005AD217 /* FilmView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD4EE6AA26E3F68B005AD217 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD4EE6AB26E3F6B2005AD217 /* Film.swift */,
+				AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4EE6B026E3F700005AD217 /* FilmView.swift in Sources */,
+				AD4EE6AC26E3F6B2005AD217 /* Film.swift in Sources */,
+				AD4EE6A926E3F652005AD217 /* SectionView.swift in Sources */,
 				AD4EE69426E3B28A005AD217 /* ContentView.swift in Sources */,
+				AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */,
 				AD4EE6A126E3B300005AD217 /* ParseView.swift in Sources */,
 				AD4EE69226E3B28A005AD217 /* tvosinatorApp.swift in Sources */,
 			);
