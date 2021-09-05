@@ -23,7 +23,6 @@ struct SearchPageModel: Codable {
 
 class SearchParseViewDelegate: ParseNavigationDelegate {
     override func dictToObject(dict: [String : Any]) {
-        print("HELLo")
         if let formattedData = try? SearchPageModel(dictionary: dict) {
             self.setResult(formattedData);
         }

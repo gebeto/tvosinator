@@ -28,8 +28,6 @@ class ParseNavigationDelegate: NSObject, WKNavigationDelegate, ObservableObject 
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         webView.evaluateJavaScript(script) { result, err in
-            print(" >>> EER", err)
-            print(" >>> RES", result)
             if let dict = result as? [String: Any] {
                 self.dictToObject(dict: dict)
             }
