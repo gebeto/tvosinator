@@ -24,22 +24,16 @@ let seatchParseScript = """
 struct SearchView: View {
     @State var films: [Film] = [];
     @State var inputSearchQuery = "test";
-    @State var searchQuery = "https://eneyida.tv/index.php?story=test&do=search&subaction=search";
+    
+    @State var parser = SimpleParser()
     
     func search() {
-        searchQuery = "https://eneyida.tv/index.php?story=\(inputSearchQuery)&do=search&subaction=search"
+        parser.parse(query: self.inputSearchQuery);
     }
     
     var body: some View {
-        SearchNavigationView(text: $searchQuery, search: self.search, cancel: {}) {
+        SearchNavigationView(text: $inputSearchQuery, search: self.search, cancel: {}) {
             ScrollView {
-                SearchParseView(
-                    url: searchQuery,
-                    script: seatchParseScript,
-                    setFilms: { films in
-                        self.films = films;
-                    }
-                ).frame(height: 0)
                 ForEach(self.films, id: \.title) { film in
                     FilmViewHorizontal(film: film)
                 }
