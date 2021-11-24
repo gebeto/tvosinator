@@ -71,7 +71,7 @@ struct FilmViewHorizontal: View {
             isPageOpen = true;
         }
         .sheet(isPresented: $isPageOpen, content: {
-            FilmWebView(url: film.link)
+            FilmPageView(url: film.link)
                 .ignoresSafeArea()
         })
     }
@@ -111,18 +111,8 @@ struct FilmView: View {
             isPageOpen = true;
         }
         .sheet(isPresented: $isPageOpen, content: {
-            FilmWebView(url: film.link)
+            FilmPageView(url: film.link)
                 .ignoresSafeArea()
         })
     }
 }
-//
-//struct FilmView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        VStack(alignment: .leading) {
-//            FilmViewHorizontal(film: FilmItem(title: "Hello world", preview: "preview.jpg", link: "https://google.com"))
-//        }
-//        .frame(width: 300, height: 300)
-//        .previewLayout(.sizeThatFits)
-//    }
-//}
