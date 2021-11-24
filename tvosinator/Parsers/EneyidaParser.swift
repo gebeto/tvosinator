@@ -8,13 +8,14 @@
 import SwiftUI
 import SwiftSoup
 
-struct FilmItem {
+
+struct EneyidaFilmItem : FilmItemProtocol {
     var link: String;
     var title: String;
     var preview: String;
     var year: String?;
     var original: String?;
-    
+
     init(block: Element) {
         self.link = try! block.select("a.short_title").attr("href");
         self.title = try! block.select("a.short_title").text();
@@ -25,8 +26,9 @@ struct FilmItem {
     }
 }
 
-class SimpleParser: ObservableObject {
-    @Published var items: [FilmItem] = [];
+
+class EneyidaParser: ObservableObject {
+    @Published var items: [EneyidaFilmItem] = [];
     @Published var loading = false;
     
     func parse(query: String) {
@@ -44,8 +46,7 @@ class SimpleParser: ObservableObject {
             let html = String(data: data, encoding: .utf8)!;
             let doc = try! SwiftSoup.parse(html);
             let elements = try! doc.select("article.short");
-            let films = elements.map { FilmItem(block: $0)}
-            print(films);
+            let films = elements.map { EneyidaFilmItem(block: $0)}
             DispatchQueue.main.async {
                 self.items = films;
                 self.loading = false;

@@ -19,12 +19,13 @@
 		AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */; };
 		AD4EE6B026E3F700005AD217 /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6AF26E3F700005AD217 /* FilmView.swift */; };
 		AD4EE6B226E40267005AD217 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EE6B126E40267005AD217 /* HomeView.swift */; };
-		AD55DCD5274D9B7700FE29BF /* SearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55DCD4274D9B7700FE29BF /* SearchParser.swift */; };
+		AD55DCD5274D9B7700FE29BF /* EneyidaParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55DCD4274D9B7700FE29BF /* EneyidaParser.swift */; };
 		AD69B1AC274E254E00274ECC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = AD69B1AB274E254E00274ECC /* SwiftSoup */; };
 		AD9E2F7E26E518A9008FC95C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E2F7D26E518A9008FC95C /* SearchView.swift */; };
 		AD9E2F8026E51C71008FC95C /* SearchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E2F7F26E51C71008FC95C /* SearchNavigationView.swift */; };
 		ADAEAE40274EAA63006E016C /* FilmPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEAE3F274EAA63006E016C /* FilmPageView.swift */; };
 		ADAEAE42274EAAC5006E016C /* FilmParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEAE41274EAAC5006E016C /* FilmParser.swift */; };
+		ADAEAE46274EB7AE006E016C /* FilmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEAE45274EB7AE006E016C /* FilmItem.swift */; };
 		ADFAE29526E4039F00E64112 /* FilmWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE29426E4039F00E64112 /* FilmWebView.swift */; };
 		ADFAE29726E40E2700E64112 /* HomeParseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE29626E40E2700E64112 /* HomeParseView.swift */; };
 		ADFAE29926E40F4200E64112 /* SimpleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE29826E40F4200E64112 /* SimpleWebView.swift */; };
@@ -44,11 +45,12 @@
 		AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsSection.swift; sourceTree = "<group>"; };
 		AD4EE6AF26E3F700005AD217 /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
 		AD4EE6B126E40267005AD217 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		AD55DCD4274D9B7700FE29BF /* SearchParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParser.swift; sourceTree = "<group>"; };
+		AD55DCD4274D9B7700FE29BF /* EneyidaParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EneyidaParser.swift; sourceTree = "<group>"; };
 		AD9E2F7D26E518A9008FC95C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AD9E2F7F26E51C71008FC95C /* SearchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationView.swift; sourceTree = "<group>"; };
 		ADAEAE3F274EAA63006E016C /* FilmPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPageView.swift; sourceTree = "<group>"; };
 		ADAEAE41274EAAC5006E016C /* FilmParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmParser.swift; sourceTree = "<group>"; };
+		ADAEAE45274EB7AE006E016C /* FilmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmItem.swift; sourceTree = "<group>"; };
 		ADFAE29426E4039F00E64112 /* FilmWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmWebView.swift; sourceTree = "<group>"; };
 		ADFAE29626E40E2700E64112 /* HomeParseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeParseView.swift; sourceTree = "<group>"; };
 		ADFAE29826E40F4200E64112 /* SimpleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWebView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		AD4EE69026E3B28A005AD217 /* tvosinator */ = {
 			isa = PBXGroup;
 			children = (
+				ADAEAE44274EB722006E016C /* Parsers */,
 				AD4EE69726E3B28A005AD217 /* Preview Content */,
 				AD4EE6AA26E3F68B005AD217 /* Models */,
 				AD4EE6A726E3F642005AD217 /* Views */,
@@ -120,7 +123,6 @@
 				ADFAE29A26E411BE00E64112 /* SearchParseView.swift */,
 				AD9E2F7D26E518A9008FC95C /* SearchView.swift */,
 				AD9E2F7F26E51C71008FC95C /* SearchNavigationView.swift */,
-				AD55DCD4274D9B7700FE29BF /* SearchParser.swift */,
 				ADAEAE3F274EAA63006E016C /* FilmPageView.swift */,
 				ADAEAE41274EAAC5006E016C /* FilmParser.swift */,
 			);
@@ -132,8 +134,17 @@
 			children = (
 				AD4EE6AB26E3F6B2005AD217 /* Film.swift */,
 				AD4EE6AD26E3F6C9005AD217 /* FilmsSection.swift */,
+				ADAEAE45274EB7AE006E016C /* FilmItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ADAEAE44274EB722006E016C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				AD55DCD4274D9B7700FE29BF /* EneyidaParser.swift */,
+			);
+			path = Parsers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,11 +238,12 @@
 				AD9E2F7E26E518A9008FC95C /* SearchView.swift in Sources */,
 				AD4EE6AE26E3F6C9005AD217 /* FilmsSection.swift in Sources */,
 				AD9E2F8026E51C71008FC95C /* SearchNavigationView.swift in Sources */,
+				ADAEAE46274EB7AE006E016C /* FilmItem.swift in Sources */,
 				AD4EE6B226E40267005AD217 /* HomeView.swift in Sources */,
 				AD4EE6A126E3B300005AD217 /* ParseView.swift in Sources */,
 				ADAEAE40274EAA63006E016C /* FilmPageView.swift in Sources */,
 				AD4EE69226E3B28A005AD217 /* tvosinatorApp.swift in Sources */,
-				AD55DCD5274D9B7700FE29BF /* SearchParser.swift in Sources */,
+				AD55DCD5274D9B7700FE29BF /* EneyidaParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
