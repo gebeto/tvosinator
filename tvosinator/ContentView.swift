@@ -7,6 +7,7 @@
 
 import SwiftUI
 import URLImage
+import AVKit
 
 
 struct ContentView: View {
@@ -21,7 +22,12 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
-            }
+                }
+            FilmFileView(url: "https://jordkym.cyou/new4/moana_2016_bdrip_1080p_h.265_ukr_eng_hurtom_6358/hls/index.m3u8")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
+                }
         }
     }
 }

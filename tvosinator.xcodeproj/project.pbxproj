@@ -187,6 +187,7 @@
 			packageReferences = (
 				AD4EE6A226E3C448005AD217 /* XCRemoteSwiftPackageReference "url-image" */,
 				AD69B1AA274E254E00274ECC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				ADAEAE43274EB223006E016C /* XCRemoteSwiftPackageReference "StreamingKit" */,
 			);
 			productRefGroup = AD4EE68F26E3B28A005AD217 /* Products */;
 			projectDirPath = "";
@@ -435,6 +436,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.0.0;
+			};
+		};
+		ADAEAE43274EB223006E016C /* XCRemoteSwiftPackageReference "StreamingKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tumtumtum/StreamingKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.30;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
