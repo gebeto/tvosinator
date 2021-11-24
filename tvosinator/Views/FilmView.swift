@@ -11,7 +11,7 @@ import WebKit
 
 
 struct FilmViewHorizontal: View {
-    var film: Film;
+    var film: FilmItem;
     @State var isPageOpen = false;
     
     var body: some View {
@@ -116,13 +116,13 @@ struct FilmView: View {
         })
     }
 }
-
-struct FilmView_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack(alignment: .leading) {
-            FilmViewHorizontal(film: Film(title: "Hello world", preview: "preview.jpg", link: "https://google.com"))
-        }
-        .frame(width: 300, height: 300)
-        .previewLayout(.sizeThatFits)
-    }
-}
+//
+//struct FilmView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VStack(alignment: .leading) {
+//            FilmViewHorizontal(film: FilmItem(title: "Hello world", preview: "preview.jpg", link: "https://google.com"))
+//        }
+//        .frame(width: 300, height: 300)
+//        .previewLayout(.sizeThatFits)
+//    }
+//}

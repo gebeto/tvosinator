@@ -12,15 +12,15 @@ import URLImage
 struct ContentView: View {
     var body: some View {
         TabView {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
+//            HomeView()
+//                .tabItem {
+//                    Image(systemName: "house.fill")
+//                    Text("Home")
+//                }
             SearchView()
-            .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Search")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
             }
         }
     }
